@@ -1,0 +1,13 @@
+" --- vim-tiny version ---
+set nocompatible
+set backspace=indent,eol,start
+set number
+set autoindent
+set cindent
+set tabstop=4
+set shiftwidth=4
+set expandtab
+set showmatch
+set ignorecase
+set smartcase
+set history=50
