@@ -18,3 +18,30 @@ filetype indent on  " 파일 종류에 따른 들여쓰기 활성화
 " 한글 주석 깨질 때
 set encoding=utf-8
 set fileencodings=utf-8,cp949
+
+" --- vim ~/.vimrc 버전 ---
+" 문법 강조 및 색상 테마
+syntax on
+colorscheme desert  " 기본 내장 테마 중 하나인 desert 적용
+
+" 인터페이스 설정
+set number           " 줄 번호 표시
+set cursorline       " 현재 줄 강조
+set laststatus=2     " 상태 표시줄 활성화
+set showcmd          " 입력 중인 명령어 표시
+
+" 편집 및 들여쓰기
+set autoindent
+set cindent
+set tabstop=4
+set shiftwidth=4
+set expandtab        " 탭을 공백으로 변환
+
+" 검색 설정
+set hlsearch         " 검색 결과 하이라이트
+set ignorecase       " 대소문자 무시
+set smartcase        " 대문자 포함 시 대소문자 구분
+
+" 기타
+set history=1000     " 명령어 기록 저장 개수
+set clipboard=unnamedplus " 시스템 클립보드 공유 (지원되는 경우)
