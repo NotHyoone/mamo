@@ -16,6 +16,13 @@ git add .
 git commit -m "커밋 메시지"
 ```
 
+## unstage
+
+```bash
+git reset HEAD <파일명>  # 특정 파일 unstage
+git reset HEAD .         # 모든 파일 unstage
+```
+
 ---
 
 ## 커밋 메시지 수정
