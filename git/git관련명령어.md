@@ -109,7 +109,7 @@ git pull origin main  # 원격 저장소에서 최신 변경 사항 가져오기
 
 ## Fork 저장소에서 작업할 때, 원본 저장소의 변경 사항을 주기적으로 가져와야 합니다.
 
-```bash 
+```bash
 git remote add upstream <원본 저장소 URL>  # 원본 저장소를 upstream으로 추가
 git fetch upstream  # 원본 저장소에서 최신 변경 사항 가져오기
 git merge upstream/main  # 원본 저장소의 main 브랜치와 병합
