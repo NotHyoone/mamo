@@ -72,6 +72,7 @@ git commit -m "Merge 충돌 해결"
 ```
 
 # Git 캐시 제거
+
 ```bash 
 git rm -r --cached .
 git add .
@@ -80,6 +81,7 @@ git push origin main
 ```
 
 # Git 브랜치에서 main에 병합
+
 ```bash
 git checkout main
 git merge <브랜치명>
@@ -87,7 +89,29 @@ git push origin main
 ```
 
 # Git 브랜치 삭제
+
 ```bash
 git branch -d <브랜치명>  # 로컬 브랜치 삭제
 git push origin --delete <브랜치명>  # 원격 브랜치 삭제
+```
+
+# Git update
+
+```bash
+git pull origin main  # 원격 저장소에서 최신 변경 사항 가져오기
+```
+
+# Git 협업 시 작업 전 할 일
+
+```bash
+git pull origin main  # 원격 저장소에서 최신 변경 사항 가져오기
+```
+
+## Fork 저장소에서 작업할 때, 원본 저장소의 변경 사항을 주기적으로 가져와야 합니다.
+
+```bash 
+git remote add upstream <원본 저장소 URL>  # 원본 저장소를 upstream으로 추가
+git fetch upstream  # 원본 저장소에서 최신 변경 사항 가져오기
+git merge upstream/main  # 원본 저장소의 main 브랜치와 병합
+git push origin main  # 변경 사항을 Fork 저장소에 푸시
 ```
